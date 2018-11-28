@@ -5,6 +5,7 @@
   "repository": "https://github.com/ipcrmdemo/seed-nodejs-typescript",
   "main": "dist/server.js",
   "scripts": {
+    "compile": "tsc --project .",
     "build": "tsc --project .",
     "start": "npm run serve",
     "serve": "node dist/server.js",
