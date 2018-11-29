@@ -21,9 +21,9 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": true
   },
-  "include": ["index.ts", "src/*.ts", "lib/**/*.ts", "test/**/*.ts"],
+  "include": ["index.ts", "src/*.ts", "lib/**/*.ts"],
   "exclude": [".#*"],
   "compileOnSave": true,
   "buildOnSave": false,
