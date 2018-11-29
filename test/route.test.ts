@@ -14,4 +14,20 @@ describe("slash route", () => {
                 expect(res.status).to.be.equal(200);
             });
     });
+
+    it("should respond with hello world message", () => {
+        return chai.request(app)
+            .get("/")
+            .then(res => {
+                expect(res.text).to.be.equal("Hello World!");
+            });
+    });
+
+    it("should respond with hello world and custom name, when supplied", () => {
+        return chai.request(app)
+            .get("/Name")
+            .then(res => {
+                expect(res.text).to.be.equal("Hello World! And you too Name!");
+            });
+    });
 });
