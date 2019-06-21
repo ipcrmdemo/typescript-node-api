@@ -1,9 +1,10 @@
 import * as express from "express";
-import * as  exphbs from "express-handlebars";
+import * as exphbs from "express-handlebars";
+import * as morgan from "morgan";
 
 /** Create App */
 export const app = express();
-app.use(require('morgan')('dev'));
+app.use(morgan("dev"));
 
 /**
  * Configure Handlerbars
