@@ -19,7 +19,7 @@ describe("slash route", () => {
         return chai.request(app)
             .get("/")
             .then(res => {
-                expect(res.text).to.be.equal("Hello World!");
+                expect(res.text).to.include("Hey there!");
             });
     });
 
@@ -27,7 +27,7 @@ describe("slash route", () => {
         return chai.request(app)
             .get("/Name")
             .then(res => {
-                expect(res.text).to.be.equal("Hello World! And you too Name!");
+                expect(res.text).to.include("Hey there Name!");
             });
     });
 });
