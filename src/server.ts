@@ -3,6 +3,7 @@ import * as  exphbs from "express-handlebars";
 
 /** Create App */
 export const app = express();
+app.use(require('morgan')('dev'));
 
 /**
  * Configure Handlerbars
